@@ -1,0 +1,27 @@
+[versions]
+agp = "8.3.2"
+kotlin = "1.9.23"
+coreKtx = "1.13.0"
+lifecycleRuntimeKtx = "2.7.0"
+activityCompose = "1.9.0"
+composeAlpha = "1.7.0-alpha07"
+destinations = "1.11.2-alpha"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "composeAlpha" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics", version.ref = "composeAlpha" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "composeAlpha" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "composeAlpha" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest", version.ref = "composeAlpha" }
+androidx-animation = { group = "androidx.compose.animation", name = "animation", version.ref = "composeAlpha" }
+androidx-material = { group = "androidx.compose.material", name = "material", version.ref = "composeAlpha" }
+destinations = { group = "io.github.raamcosta.compose-destinations", name = "animations-core", version.ref = "destinations" }
+destinations-ksp = { group = "io.github.raamcosta.compose-destinations", name = "ksp", version.ref = "destinations" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version = "1.9.23-1.0.20" }
